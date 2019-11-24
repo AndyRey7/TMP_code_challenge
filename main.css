@@ -63,7 +63,7 @@ html, body {
         bottom: 25px;
         right: 10px; }
   html header .banner, body header .banner {
-    background-image: url(./img/Header_img.png);
+    background-image: url(./img/banner_img.png);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -145,6 +145,64 @@ html, body {
       line-height: 1.7; }
       html #home-loans .home-loan-container .loan-p p, body #home-loans .home-loan-container .loan-p p {
         padding: 0 120px; }
+  html #employees .employee-container, body #employees .employee-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 50px 100px; }
+    html #employees .employee-container .employee-card-sides, body #employees .employee-container .employee-card-sides {
+      width: 200px;
+      text-align: center;
+      line-height: 1.5; }
+      html #employees .employee-container .employee-card-sides .profile-pic-1, body #employees .employee-container .employee-card-sides .profile-pic-1 {
+        background-image: url(./img/profile_img1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 200px;
+        width: 200px; }
+      html #employees .employee-container .employee-card-sides .profile-pic-3, body #employees .employee-container .employee-card-sides .profile-pic-3 {
+        background-image: url(./img/profile_img3.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 200px;
+        width: 200px; }
+      html #employees .employee-container .employee-card-sides p, body #employees .employee-container .employee-card-sides p {
+        z-index: 1;
+        font-style: italic;
+        text-align: center;
+        margin-bottom: 15px; }
+        html #employees .employee-container .employee-card-sides p .quotation, body #employees .employee-container .employee-card-sides p .quotation {
+          position: absolute;
+          font-size: 10rem;
+          color: rgba(171, 170, 170, 0.15); }
+      html #employees .employee-container .employee-card-sides .position, body #employees .employee-container .employee-card-sides .position {
+        color: #00945f; }
+    html #employees .employee-container .employee-card-center, body #employees .employee-container .employee-card-center {
+      width: 730px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      line-height: 1.5; }
+      html #employees .employee-container .employee-card-center .profile-pic-2, body #employees .employee-container .employee-card-center .profile-pic-2 {
+        background-image: url(./img/profile_img2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 200px;
+        width: 200px; }
+      html #employees .employee-container .employee-card-center p, body #employees .employee-container .employee-card-center p {
+        width: 400px;
+        font-style: italic;
+        z-index: 1;
+        text-align: center;
+        margin-bottom: 15px; }
+        html #employees .employee-container .employee-card-center p .quotation, body #employees .employee-container .employee-card-center p .quotation {
+          position: absolute;
+          font-size: 10rem;
+          color: rgba(171, 170, 170, 0.15); }
+      html #employees .employee-container .employee-card-center .position, body #employees .employee-container .employee-card-center .position {
+        width: 200px;
+        color: #00945f; }
   html .title, body .title {
     color: #00945f;
     font-size: 2rem;
