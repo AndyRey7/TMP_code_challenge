@@ -45,28 +45,114 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-header .header-container {
-  padding: 30px 10px 50px 30px; }
-  header .header-container .company-name {
-    color: #00945f;
-    font-size: 4rem;
-    font-weight: 600;
-    font-family: "Arial";
-    display: inline-block; }
-    header .header-container .company-name .tm {
-      font-size: 18px;
+html, body {
+  font-family: "Arial"; }
+  html header .header-container, body header .header-container {
+    padding: 30px 10px 50px 30px; }
+    html header .header-container .company-name, body header .header-container .company-name {
+      color: #00945f;
+      font-size: 4rem;
+      font-weight: 600;
+      font-family: "Arial";
+      display: inline-block;
       position: relative;
-      bottom: 25px;
-      right: 10px; }
-header .header-img {
-  background-image: url(./img/Header_img.png);
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  max-width: 1440px;
-  height: 500px;
-  margin: 0 auto;
-  margin-bottom: 65px; }
+      bottom: 10px; }
+      html header .header-container .company-name .tm, body header .header-container .company-name .tm {
+        font-size: 18px;
+        position: relative;
+        bottom: 25px;
+        right: 10px; }
+  html header .header-img, body header .header-img {
+    background-image: url(./img/Header_img.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-width: 1440px;
+    height: 500px;
+    margin: 0 auto;
+    margin-bottom: 65px; }
+  html header .company-hook, body header .company-hook {
+    padding: 0 40px 19px 30px; }
+    html header .company-hook p, body header .company-hook p {
+      color: #bdbdbd;
+      line-height: 1.5; }
+  html #career .c-container, body #career .c-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px; }
+    html #career .c-container .career-button, body #career .c-container .career-button {
+      display: inline-block;
+      color: #fff;
+      padding: 10px 20px;
+      background-color: #e97300;
+      cursor: pointer;
+      font-size: 1.3rem; }
+  html #career .cb-info-container, body #career .cb-info-container {
+    padding: 0 60px 0 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    line-height: 1.5; }
+    html #career .cb-info-container .info-card, body #career .cb-info-container .info-card {
+      margin-bottom: 110px; }
+      html #career .cb-info-container .info-card .vl, body #career .cb-info-container .info-card .vl {
+        border-left: 1px solid #bdbdbd;
+        height: 140px;
+        position: absolute;
+        bottom: -360px;
+        right: 717px; }
+      html #career .cb-info-container .info-card .vl-bottom, body #career .cb-info-container .info-card .vl-bottom {
+        border-left: 1px solid #bdbdbd;
+        height: 114px;
+        position: absolute;
+        bottom: -565px;
+        right: 717px; }
+      html #career .cb-info-container .info-card h1, body #career .cb-info-container .info-card h1 {
+        margin-bottom: 7px;
+        color: #00945f;
+        font-size: 1.3rem; }
+      html #career .cb-info-container .info-card .h1-right, body #career .cb-info-container .info-card .h1-right {
+        padding-left: 40px; }
+      html #career .cb-info-container .info-card .p-left, body #career .cb-info-container .info-card .p-left {
+        color: #bdbdbd;
+        line-height: 1.5;
+        padding-right: 20px; }
+      html #career .cb-info-container .info-card .p-right, body #career .cb-info-container .info-card .p-right {
+        color: #bdbdbd;
+        line-height: 1.5;
+        padding-left: 40px; }
+      html #career .cb-info-container .info-card a, body #career .cb-info-container .info-card a {
+        text-decoration: none;
+        color: #a1b977; }
+        html #career .cb-info-container .info-card a:hover, body #career .cb-info-container .info-card a:hover {
+          color: #00945f;
+          transition: all .4s ease-in-out; }
+        html #career .cb-info-container .info-card a .less-than, body #career .cb-info-container .info-card a .less-than {
+          font-size: 20px; }
+  html #home-loans .home-loan-container, body #home-loans .home-loan-container {
+    padding: 0 50px 30px 30px; }
+    html #home-loans .home-loan-container .loan-title, body #home-loans .home-loan-container .loan-title {
+      padding: 25px 10px;
+      background-color: #00945f;
+      color: #fff;
+      font-size: 1.3rem;
+      text-align: center; }
+    html #home-loans .home-loan-container .loan-p, body #home-loans .home-loan-container .loan-p {
+      padding: 30px 5px;
+      background-color: #ebf7f5;
+      color: #bdbdbd;
+      line-height: 1.7; }
+      html #home-loans .home-loan-container .loan-p p, body #home-loans .home-loan-container .loan-p p {
+        padding: 0 120px; }
+  html .title, body .title {
+    color: #00945f;
+    font-size: 2rem;
+    text-align: center; }
+    html .title hr, body .title hr {
+      max-width: 70px;
+      height: 3px;
+      border: none;
+      background-color: #00945f; }
 
 /*# sourceMappingURL=main.css.map */

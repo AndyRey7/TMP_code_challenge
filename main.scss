@@ -1,41 +1,178 @@
 //imports
 @import "reset";
 
-//varaibles
+//variables
 $darkGreen: #00945f;
 $backgroundBlue: #ebf7f5;
 $redOrange: #e97300;
+$text: #bdbdbd;
+$linkColor: #a1b977;
 
+html, body {
+    font-family: "Arial";
+//---------------------------header scetion -------------------
+    header {
+        .header-container {
+            padding: 30px 10px 50px 30px;
 
-header {
-    .header-container {
-        padding: 30px 10px 50px 30px;
-
-        .company-name {
-            color: $darkGreen;
-            font-size: 4rem;
-            font-weight: 600;
-            font-family: "Arial";
-            display:inline-block;
-
-            .tm {
-                font-size: 18px;
+            .company-name {
+                color: $darkGreen;
+                font-size: 4rem;
+                font-weight: 600;
+                font-family: "Arial";
+                display:inline-block;
                 position: relative;
-                bottom: 25px;
-                right: 10px;
+                bottom: 10px;
+
+                .tm {
+                    font-size: 18px;
+                    position: relative;
+                    bottom: 25px;
+                    right: 10px;
+                }
+            }
+        }
+
+        .header-img {
+            background-image: url(./img/Header_img.png);
+            background-position: top center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            max-width: 1440px;
+            height: 500px;
+            margin: 0 auto;
+            margin-bottom: 65px;
+        }
+
+        .company-hook {
+            padding: 0 40px 19px 30px;
+            p {
+                color: $text;
+                line-height: 1.5;
+            }
+
+        }
+    }
+//----------------------------------------------------
+
+//----------------------career section-----------------
+    #career {
+        .c-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 40px;
+
+            .career-button {
+                display: inline-block;
+                color: #fff;
+                padding: 10px 20px;
+                background-color: $redOrange;
+                cursor: pointer;
+                font-size: 1.3rem;
+            }
+        }
+        .cb-info-container {
+            padding: 0 60px 0 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            line-height: 1.5;
+
+            .info-card {
+                margin-bottom: 110px;
+
+                .vl {
+                  border-left: 1px solid $text;
+                  height: 140px;
+                  position: absolute;
+                  bottom: -360px;
+                  right: 717px;
+                }
+
+                .vl-bottom {
+                    border-left: 1px solid #bdbdbd;
+                    height: 114px;
+                    position: absolute;
+                    bottom: -565px;
+                    right: 717px;
+                }
+
+                h1 {
+                    margin-bottom: 7px;
+                    color: $darkGreen;
+                    font-size: 1.3rem;
+                }
+
+                .h1-right {
+                    padding-left: 40px;
+                }
+
+                .p-left {
+                    color: $text;
+                    line-height: 1.5;
+                    padding-right: 20px;
+                }
+
+                .p-right {
+                    color: $text;
+                    line-height: 1.5;
+                    padding-left: 40px;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: $linkColor;
+                    &:hover {
+                        color: $darkGreen;
+                        transition: all .4s ease-in-out;
+                    }
+                    .less-than {
+                        font-size: 20px;
+                    }
+                }
             }
         }
     }
+//----------------------------------------------------------------
 
-    .header-img {
-        background-image: url(./img/Header_img.png);
-        background-position: top center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
-        max-width: 1440px;
-        height: 500px;
-        margin: 0 auto;
-        margin-bottom: 65px;
+//------------------home loans section-----------------------------
+    #home-loans {
+        .home-loan-container {
+            padding: 0 50px 30px 30px;
+
+            .loan-title {
+                padding: 25px 10px;
+                background-color: $darkGreen;
+                color: #fff;
+                font-size: 1.3rem;
+                text-align: center;
+            }
+
+            .loan-p {
+                padding: 30px 5px;
+                background-color: $backgroundBlue;
+                color: $text;
+                line-height: 1.7;
+                p {
+                    padding: 0 120px;
+                }
+            }
+        }
+    }
+//-------------reusable components----------------------------------
+    .title {
+        color: $darkGreen;
+        font-size: 2rem;
+        text-align: center;
+
+        hr {
+            max-width: 70px;
+            height: 3px;
+            border: none;
+            background-color: $darkGreen;
+        }
     }
 }
+
+//------------------------------------------------------------------
