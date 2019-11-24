@@ -1,0 +1,41 @@
+//imports
+@import "reset";
+
+//varaibles
+$darkGreen: #00945f;
+$backgroundBlue: #ebf7f5;
+$redOrange: #e97300;
+
+
+header {
+    .header-container {
+        padding: 30px 10px 50px 30px;
+
+        .company-name {
+            color: $darkGreen;
+            font-size: 4rem;
+            font-weight: 600;
+            font-family: "Arial";
+            display:inline-block;
+
+            .tm {
+                font-size: 18px;
+                position: relative;
+                bottom: 25px;
+                right: 10px;
+            }
+        }
+    }
+
+    .header-img {
+        background-image: url(./img/Header_img.png);
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        max-width: 1440px;
+        height: 500px;
+        margin: 0 auto;
+        margin-bottom: 65px;
+    }
+}
