@@ -318,6 +318,10 @@ html, body {
     :nth-child(2) {
         text-decoration: none;
     }
+
+    .click-here {
+        text-decoration: underline;
+    }
     :nth-child(3) {
         border-left: solid 1px #000;
         margin-left: 10px;
@@ -415,6 +419,15 @@ html, body {
                 .h1-right {
                     padding: 0;
                 }
+
+                .vl-bottom {
+                    display: none;
+                }
+
+                .vl {
+                    display: none;
+                }
+
                 .vl-bottom ~ p {
                     margin-bottom: 25px;
                 }
@@ -430,18 +443,62 @@ html, body {
         }
     }
 
+    #home-loans {
+        .home-loan-container {
+            padding: 0 20px;
 
-
-
-
-
-    .vl-bottom {
-        display: none;
+            .loan-title {
+                padding: 15px 42px;
+                width: 374px;
+            }
+            .loan-p {
+                padding: 10px 40px;
+                width: 374px;
+                p {
+                    padding: 0;
+                }
+            }
+        }
     }
 
-    .vl {
-        display: none;
+    #employees {
+        .employee-container {
+            grid-template-columns: 1fr;
+
+            .employee-card-center {
+                width:200px;
+
+                .profile-pic-2 {
+                    margin-top: 20px;
+                }
+                p {
+                    width:200px;
+                }
+            }
+        }
     }
+
+    footer {
+        .footer-line {
+            margin: 10px 0 40px 0;
+        }
+
+        .social-media {
+            margin-bottom: 10px;
+        }
+
+        .footer-container {
+            padding: 20px 30px;
+            font-size: .9rem;
+        }
+    }
+
+
+
+
+
+
+
 }
 
 //==============================================================

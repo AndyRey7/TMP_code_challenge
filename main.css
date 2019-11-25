@@ -260,6 +260,8 @@ header .header-container {
     color: #000; }
   .footer-container :nth-child(2) {
     text-decoration: none; }
+  .footer-container .click-here {
+    text-decoration: underline; }
   .footer-container :nth-child(3) {
     border-left: solid 1px #000;
     margin-left: 10px;
@@ -323,6 +325,10 @@ header .header-container {
         padding: 0; }
       #career .cb-info-container .info-card .h1-right {
         padding: 0; }
+      #career .cb-info-container .info-card .vl-bottom {
+        display: none; }
+      #career .cb-info-container .info-card .vl {
+        display: none; }
       #career .cb-info-container .info-card .vl-bottom ~ p {
         margin-bottom: 25px; }
       #career .cb-info-container .info-card .p-right {
@@ -331,10 +337,32 @@ header .header-container {
         display: block;
         margin: 10px; }
 
-  .vl-bottom {
-    display: none; }
+  #home-loans .home-loan-container {
+    padding: 0 20px; }
+    #home-loans .home-loan-container .loan-title {
+      padding: 15px 42px;
+      width: 374px; }
+    #home-loans .home-loan-container .loan-p {
+      padding: 10px 40px;
+      width: 374px; }
+      #home-loans .home-loan-container .loan-p p {
+        padding: 0; }
 
-  .vl {
-    display: none; } }
+  #employees .employee-container {
+    grid-template-columns: 1fr; }
+    #employees .employee-container .employee-card-center {
+      width: 200px; }
+      #employees .employee-container .employee-card-center .profile-pic-2 {
+        margin-top: 20px; }
+      #employees .employee-container .employee-card-center p {
+        width: 200px; }
+
+  footer .footer-line {
+    margin: 10px 0 40px 0; }
+  footer .social-media {
+    margin-bottom: 10px; }
+  footer .footer-container {
+    padding: 20px 30px;
+    font-size: .9rem; } }
 
 /*# sourceMappingURL=main.css.map */
