@@ -367,5 +367,8 @@ header .header-container {
   footer .footer-container {
     padding: 20px 30px;
     font-size: .9rem; } }
+@media screen and (max-width: 400px) and (min-width: 0px) {
+  header .header-container .logo {
+    left: 30px; } }
 
 /*# sourceMappingURL=main.css.map */

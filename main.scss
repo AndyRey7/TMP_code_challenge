@@ -500,13 +500,16 @@ html, body {
             font-size: .9rem;
         }
     }
+}
 
-
-
-
-
-
-
+@media screen and (max-width: 400px) and (min-width: 0px) {
+    header {
+        .header-container {
+            .logo {
+                left: 30px;
+            }
+        }
+    }
 }
 
 //==============================================================
