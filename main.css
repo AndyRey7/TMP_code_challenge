@@ -47,224 +47,294 @@ table {
 
 html, body {
   font-family: "Arial"; }
-  html header .header-container, body header .header-container {
-    padding: 30px 10px 50px 30px; }
-    html header .header-container .company-name, body header .header-container .company-name {
-      color: #00945f;
-      font-size: 4rem;
-      font-weight: 600;
-      font-family: "Arial";
-      display: inline-block;
+
+header .header-container {
+  padding: 30px 10px 50px 30px; }
+  header .header-container .logo {
+    height: 65px;
+    width: 65px;
+    background-image: url(./img/CB_logo.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block; }
+  header .header-container .company-name {
+    color: #00945f;
+    font-size: 4rem;
+    font-weight: 600;
+    display: inline-block;
+    position: relative;
+    bottom: 10px;
+    margin-bottom: 30px; }
+    header .header-container .company-name .tm {
+      font-size: 18px;
       position: relative;
-      bottom: 10px; }
-      html header .header-container .company-name .tm, body header .header-container .company-name .tm {
-        font-size: 18px;
-        position: relative;
-        bottom: 25px;
-        right: 10px; }
-  html header .banner, body header .banner {
+      bottom: 25px;
+      right: 10px; }
+  header .header-container .banner {
     background-image: url(./img/banner_img.png);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    max-width: 1440px;
     height: 500px;
-    margin: 0 auto;
     margin-bottom: 65px; }
-  html header .company-hook, body header .company-hook {
-    padding: 0 40px 19px 30px; }
-    html header .company-hook p, body header .company-hook p {
+  header .header-container .company-hook {
+    color: #bdbdbd;
+    line-height: 1.5; }
+
+#career .c-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px; }
+  #career .c-container .career-button {
+    display: inline-block;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: #e97300;
+    cursor: pointer;
+    font-size: 1.3rem; }
+#career .cb-info-container {
+  padding: 0 60px 0 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  line-height: 1.5; }
+  #career .cb-info-container .info-card {
+    margin-bottom: 110px; }
+    #career .cb-info-container .info-card .vl {
+      border-left: 1px solid #bdbdbd;
+      height: 120px;
+      float: left; }
+    #career .cb-info-container .info-card .vl-bottom {
+      border-left: 1px solid #bdbdbd;
+      height: 95px;
+      float: left; }
+    #career .cb-info-container .info-card h1 {
+      margin-bottom: 7px;
+      color: #00945f;
+      font-size: 1.3rem; }
+    #career .cb-info-container .info-card .h1-right {
+      padding-left: 40px; }
+    #career .cb-info-container .info-card .p-left {
       color: #bdbdbd;
-      line-height: 1.5; }
-  html #career .c-container, body #career .c-container {
+      line-height: 1.5;
+      padding-right: 20px; }
+    #career .cb-info-container .info-card .p-right {
+      color: #bdbdbd;
+      line-height: 1.5;
+      padding-left: 40px; }
+    #career .cb-info-container .info-card a {
+      text-decoration: none;
+      color: #a1b977; }
+      #career .cb-info-container .info-card a:hover {
+        color: #00945f;
+        transition: all .4s ease-in-out; }
+      #career .cb-info-container .info-card a .less-than {
+        font-size: 20px; }
+    #career .cb-info-container .info-card .mobile-line {
+      display: none; }
+
+#home-loans .home-loan-container {
+  padding: 0 50px 30px 30px; }
+  #home-loans .home-loan-container .loan-title {
+    padding: 25px 10px;
+    background-color: #00945f;
+    color: #fff;
+    font-size: 1.3rem;
+    text-align: center; }
+  #home-loans .home-loan-container .loan-p {
+    padding: 30px 5px;
+    background-color: #ebf7f5;
+    color: #bdbdbd;
+    line-height: 1.7; }
+    #home-loans .home-loan-container .loan-p p {
+      padding: 0 120px; }
+
+#employees .employee-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 50px 100px; }
+  #employees .employee-container .employee-card-sides {
+    width: 200px;
+    text-align: center;
+    line-height: 1.5; }
+    #employees .employee-container .employee-card-sides .profile-pic-1 {
+      background-image: url(./img/profile_img1.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 200px;
+      width: 200px; }
+    #employees .employee-container .employee-card-sides .profile-pic-3 {
+      background-image: url(./img/profile_img3.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 200px;
+      width: 200px; }
+    #employees .employee-container .employee-card-sides p {
+      z-index: 1;
+      font-style: italic;
+      text-align: center;
+      margin-bottom: 15px; }
+      #employees .employee-container .employee-card-sides p .quotation {
+        position: absolute;
+        font-size: 10rem;
+        color: rgba(171, 170, 170, 0.15); }
+    #employees .employee-container .employee-card-sides .position {
+      color: #00945f; }
+  #employees .employee-container .employee-card-center {
+    width: 730px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 40px; }
-    html #career .c-container .career-button, body #career .c-container .career-button {
-      display: inline-block;
-      color: #fff;
-      padding: 10px 20px;
-      background-color: #e97300;
-      cursor: pointer;
-      font-size: 1.3rem; }
-  html #career .cb-info-container, body #career .cb-info-container {
-    padding: 0 60px 0 30px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    flex-direction: column;
+    text-align: center;
     line-height: 1.5; }
-    html #career .cb-info-container .info-card, body #career .cb-info-container .info-card {
-      margin-bottom: 110px; }
-      html #career .cb-info-container .info-card .vl, body #career .cb-info-container .info-card .vl {
-        border-left: 1px solid #bdbdbd;
-        height: 120px;
+    #employees .employee-container .employee-card-center .profile-pic-2 {
+      background-image: url(./img/profile_img2.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 200px;
+      width: 200px; }
+    #employees .employee-container .employee-card-center p {
+      width: 400px;
+      font-style: italic;
+      z-index: 1;
+      text-align: center;
+      margin-bottom: 15px; }
+      #employees .employee-container .employee-card-center p .quotation {
         position: absolute;
-        bottom: -350px;
-        right: 717px; }
-      html #career .cb-info-container .info-card .vl-bottom, body #career .cb-info-container .info-card .vl-bottom {
-        border-left: 1px solid #bdbdbd;
-        height: 95px;
-        position: absolute;
-        bottom: -575px;
-        right: 717px; }
-      html #career .cb-info-container .info-card h1, body #career .cb-info-container .info-card h1 {
-        margin-bottom: 7px;
-        color: #00945f;
-        font-size: 1.3rem; }
-      html #career .cb-info-container .info-card .h1-right, body #career .cb-info-container .info-card .h1-right {
-        padding-left: 40px; }
-      html #career .cb-info-container .info-card .p-left, body #career .cb-info-container .info-card .p-left {
-        color: #bdbdbd;
-        line-height: 1.5;
-        padding-right: 20px; }
-      html #career .cb-info-container .info-card .p-right, body #career .cb-info-container .info-card .p-right {
-        color: #bdbdbd;
-        line-height: 1.5;
-        padding-left: 40px; }
-      html #career .cb-info-container .info-card a, body #career .cb-info-container .info-card a {
-        text-decoration: none;
-        color: #a1b977; }
-        html #career .cb-info-container .info-card a:hover, body #career .cb-info-container .info-card a:hover {
-          color: #00945f;
-          transition: all .4s ease-in-out; }
-        html #career .cb-info-container .info-card a .less-than, body #career .cb-info-container .info-card a .less-than {
-          font-size: 20px; }
-  html #home-loans .home-loan-container, body #home-loans .home-loan-container {
-    padding: 0 50px 30px 30px; }
-    html #home-loans .home-loan-container .loan-title, body #home-loans .home-loan-container .loan-title {
-      padding: 25px 10px;
-      background-color: #00945f;
-      color: #fff;
-      font-size: 1.3rem;
-      text-align: center; }
-    html #home-loans .home-loan-container .loan-p, body #home-loans .home-loan-container .loan-p {
-      padding: 30px 5px;
-      background-color: #ebf7f5;
-      color: #bdbdbd;
-      line-height: 1.7; }
-      html #home-loans .home-loan-container .loan-p p, body #home-loans .home-loan-container .loan-p p {
-        padding: 0 120px; }
-  html #employees .employee-container, body #employees .employee-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 50px 100px; }
-    html #employees .employee-container .employee-card-sides, body #employees .employee-container .employee-card-sides {
+        font-size: 10rem;
+        color: rgba(171, 170, 170, 0.15); }
+    #employees .employee-container .employee-card-center .position {
       width: 200px;
-      text-align: center;
-      line-height: 1.5; }
-      html #employees .employee-container .employee-card-sides .profile-pic-1, body #employees .employee-container .employee-card-sides .profile-pic-1 {
-        background-image: url(./img/profile_img1.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 200px;
-        width: 200px; }
-      html #employees .employee-container .employee-card-sides .profile-pic-3, body #employees .employee-container .employee-card-sides .profile-pic-3 {
-        background-image: url(./img/profile_img3.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 200px;
-        width: 200px; }
-      html #employees .employee-container .employee-card-sides p, body #employees .employee-container .employee-card-sides p {
-        z-index: 1;
-        font-style: italic;
-        text-align: center;
-        margin-bottom: 15px; }
-        html #employees .employee-container .employee-card-sides p .quotation, body #employees .employee-container .employee-card-sides p .quotation {
-          position: absolute;
-          font-size: 10rem;
-          color: rgba(171, 170, 170, 0.15); }
-      html #employees .employee-container .employee-card-sides .position, body #employees .employee-container .employee-card-sides .position {
-        color: #00945f; }
-    html #employees .employee-container .employee-card-center, body #employees .employee-container .employee-card-center {
-      width: 730px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      text-align: center;
-      line-height: 1.5; }
-      html #employees .employee-container .employee-card-center .profile-pic-2, body #employees .employee-container .employee-card-center .profile-pic-2 {
-        background-image: url(./img/profile_img2.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 200px;
-        width: 200px; }
-      html #employees .employee-container .employee-card-center p, body #employees .employee-container .employee-card-center p {
-        width: 400px;
-        font-style: italic;
-        z-index: 1;
-        text-align: center;
-        margin-bottom: 15px; }
-        html #employees .employee-container .employee-card-center p .quotation, body #employees .employee-container .employee-card-center p .quotation {
-          position: absolute;
-          font-size: 10rem;
-          color: rgba(171, 170, 170, 0.15); }
-      html #employees .employee-container .employee-card-center .position, body #employees .employee-container .employee-card-center .position {
-        width: 200px;
-        color: #00945f; }
-  html .footer-line, body .footer-line {
-    margin: 100px 0 40px 0;
-    height: 2px;
+      color: #00945f; }
+
+.footer-line {
+  margin: 100px 0 40px 0;
+  height: 2px;
+  border: none;
+  background-color: #00945f; }
+
+.social-media {
+  margin-bottom: 25px;
+  display: grid;
+  grid-template-columns: 30px 30px 30px 30px;
+  padding-left: 30px;
+  /* Set a specific color for each brand */
+  /* Facebook */
+  /* Twitter */ }
+  .social-media .fa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 30px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    text-decoration: none; }
+    .social-media .fa:hover {
+      opacity: 0.7; }
+  .social-media .fa-facebook {
+    background: #3B5998;
+    color: #fff; }
+  .social-media .fa-twitter {
+    margin-left: 20px;
+    background: #55ACEE;
+    color: #fff; }
+  .social-media .fa-linkedin {
+    margin-left: 40px;
+    background: #007bb5;
+    color: white; }
+  .social-media .fa-youtube {
+    margin-left: 60px;
+    background: #bb0000;
+    color: white; }
+
+.footer-container {
+  padding: 50px 30px;
+  font-size: .8rem; }
+  .footer-container p {
+    margin-bottom: 30px; }
+  .footer-container a {
+    color: #000; }
+  .footer-container :nth-child(2) {
+    text-decoration: none; }
+  .footer-container :nth-child(3) {
+    border-left: solid 1px #000;
+    margin-left: 10px;
+    text-decoration: none;
+    padding-left: 10px; }
+
+.title {
+  color: #00945f;
+  font-size: 2rem;
+  text-align: center; }
+  .title hr {
+    max-width: 70px;
+    height: 3px;
     border: none;
     background-color: #00945f; }
-  html .social-media, body .social-media {
-    margin-bottom: 25px;
-    display: grid;
-    grid-template-columns: 30px 30px 30px 30px;
-    padding-left: 30px;
-    /* Set a specific color for each brand */
-    /* Facebook */
-    /* Twitter */ }
-    html .social-media .fa, body .social-media .fa {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-      font-size: 30px;
-      width: 20px;
-      height: 20px;
+
+@media screen and (max-width: 700px) and (min-width: 400px) {
+  header .header-container {
+    max-width: 100%;
+    padding: 0 10px; }
+    header .header-container .banner {
+      background-image: url(./img/mobile-pic.png);
+      background-position: right;
+      background-repeat: no-repeat;
+      background-size: cover; }
+    header .header-container .logo {
+      height: 38px;
+      width: 38px;
+      position: relative;
+      top: 70px;
+      left: 39px; }
+    header .header-container .company-name {
+      display: block;
       text-align: center;
-      text-decoration: none; }
-      html .social-media .fa:hover, body .social-media .fa:hover {
-        opacity: 0.7; }
-    html .social-media .fa-facebook, body .social-media .fa-facebook {
-      background: #3B5998;
-      color: #fff; }
-    html .social-media .fa-twitter, body .social-media .fa-twitter {
-      margin-left: 20px;
-      background: #55ACEE;
-      color: #fff; }
-    html .social-media .fa-linkedin, body .social-media .fa-linkedin {
-      margin-left: 40px;
-      background: #007bb5;
-      color: white; }
-    html .social-media .fa-youtube, body .social-media .fa-youtube {
-      margin-left: 60px;
-      background: #bb0000;
-      color: white; }
-  html .footer-container, body .footer-container {
-    padding: 50px 30px;
-    font-size: .8rem; }
-    html .footer-container p, body .footer-container p {
-      margin-bottom: 30px; }
-    html .footer-container a, body .footer-container a {
-      color: #000; }
-    html .footer-container :nth-child(2), body .footer-container :nth-child(2) {
-      text-decoration: none; }
-    html .footer-container :nth-child(3), body .footer-container :nth-child(3) {
-      border-left: solid 1px #000;
-      margin-left: 10px;
-      text-decoration: none;
-      padding-left: 10px; }
-  html .title, body .title {
-    color: #00945f;
-    font-size: 2rem;
-    text-align: center; }
-    html .title hr, body .title hr {
-      max-width: 70px;
-      height: 3px;
-      border: none;
-      background-color: #00945f; }
+      font-size: 2.5rem;
+      padding: 30px 2px;
+      position: static;
+      margin: 0 0 0 40px; }
+      header .header-container .company-name .tm {
+        font-size: 12px;
+        position: relative;
+        bottom: 20px;
+        right: 10px; }
+    header .header-container .company-hook {
+      width: 100%; }
+      header .header-container .company-hook p {
+        font-size: 19px;
+        padding: 20px; }
+
+  #career .title {
+    width: 425px;
+    padding: 18px; }
+  #career .cb-info-container {
+    padding: 0 30px;
+    font-size: 19px;
+    grid-template-columns: 1fr;
+    width: 415px; }
+    #career .cb-info-container .info-card {
+      margin-bottom: 5px; }
+      #career .cb-info-container .info-card .p-left {
+        padding: 0; }
+      #career .cb-info-container .info-card .h1-right {
+        padding: 0; }
+      #career .cb-info-container .info-card .vl-bottom ~ p {
+        margin-bottom: 25px; }
+      #career .cb-info-container .info-card .p-right {
+        padding: 0; }
+      #career .cb-info-container .info-card .mobile-line {
+        display: block;
+        margin: 10px; }
+
+  .vl-bottom {
+    display: none; }
+
+  .vl {
+    display: none; } }
 
 /*# sourceMappingURL=main.css.map */

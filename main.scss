@@ -10,48 +10,52 @@ $linkColor: #a1b977;
 
 html, body {
     font-family: "Arial";
+}
 //---------------------------header scetion -------------------
     header {
         .header-container {
             padding: 30px 10px 50px 30px;
 
+            .logo {
+                height: 65px;
+                width: 65px;
+                background-image: url(./img/CB_logo.png);
+                background-position: top center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: inline-block;
+            }
+
             .company-name {
                 color: $darkGreen;
                 font-size: 4rem;
                 font-weight: 600;
-                font-family: "Arial";
                 display:inline-block;
                 position: relative;
                 bottom: 10px;
+                margin-bottom: 30px;
 
-                .tm {
+            .tm {
                     font-size: 18px;
                     position: relative;
                     bottom: 25px;
                     right: 10px;
                 }
             }
-        }
 
-        .banner {
-            background-image: url(./img/banner_img.png);
-            background-position: top center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 100%;
-            max-width: 1440px;
-            height: 500px;
-            margin: 0 auto;
-            margin-bottom: 65px;
-        }
-
-        .company-hook {
-            padding: 0 40px 19px 30px;
-            p {
-                color: $text;
-                line-height: 1.5;
+            .banner {
+                background-image: url(./img/banner_img.png);
+                background-position: top center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 500px;
+                margin-bottom: 65px;
             }
 
+            .company-hook {
+                    color: $text;
+                    line-height: 1.5;
+            }
         }
     }
 //===================================================================
@@ -85,17 +89,13 @@ html, body {
                 .vl {
                   border-left: 1px solid $text;
                   height: 120px;
-                  position: absolute;
-                  bottom: -350px;
-                  right: 717px;
+                  float: left;
                 }
 
                 .vl-bottom {
                     border-left: 1px solid #bdbdbd;
                     height: 95px;
-                    position: absolute;
-                    bottom: -575px;
-                    right: 717px;
+                    float: left;
                 }
 
                 h1 {
@@ -130,6 +130,10 @@ html, body {
                     .less-than {
                         font-size: 20px;
                     }
+                }
+
+                .mobile-line {
+                    display: none;
                 }
             }
         }
@@ -337,8 +341,107 @@ html, body {
             background-color: $darkGreen;
         }
     }
+
+
+//=================================================================
+
+//-----------------media queries------------------------------------
+
+@media screen and (max-width: 700px) and (min-width: 400px) {
+    header {
+        .header-container {
+            max-width: 100%;
+            padding: 0 10px;
+
+            .banner {
+                background-image: url(./img/mobile-pic.png);
+                background-position: right;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .logo {
+                height: 38px;
+                width: 38px;
+                position: relative;
+                top: 70px;
+                left: 39px;
+            }
+
+            .company-name {
+                display: block;
+                text-align: center;
+                font-size: 2.5rem;
+                padding: 30px 2px;
+                position: static;
+                margin: 0 0 0 40px ;
+
+            .tm {
+                    font-size: 12px;
+                    position: relative;
+                    bottom: 20px;
+                    right: 10px;
+                }
+            }
+
+            .company-hook {
+                width: 100%;
+                p {
+                    font-size: 19px;
+                    padding: 20px;
+                }
+            }
+        }
+    }
+
+    #career {
+
+        .title {
+            width: 425px;
+            padding: 18px;
+        }
+        .cb-info-container {
+            padding: 0 30px;
+            font-size: 19px;
+            grid-template-columns: 1fr;
+            width: 415px;
+
+            .info-card {
+                margin-bottom: 5px;
+
+                .p-left {
+                    padding: 0;
+                }
+                .h1-right {
+                    padding: 0;
+                }
+                .vl-bottom ~ p {
+                    margin-bottom: 25px;
+                }
+                .p-right {
+                    padding: 0;
+                }
+
+                .mobile-line {
+                    display: block;
+                    margin: 10px;
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+    .vl-bottom {
+        display: none;
+    }
+
+    .vl {
+        display: none;
+    }
 }
 
-
-
-//===================================================================
+//==============================================================
