@@ -98,15 +98,15 @@ html, body {
       margin-bottom: 110px; }
       html #career .cb-info-container .info-card .vl, body #career .cb-info-container .info-card .vl {
         border-left: 1px solid #bdbdbd;
-        height: 140px;
+        height: 120px;
         position: absolute;
-        bottom: -360px;
+        bottom: -350px;
         right: 717px; }
       html #career .cb-info-container .info-card .vl-bottom, body #career .cb-info-container .info-card .vl-bottom {
         border-left: 1px solid #bdbdbd;
-        height: 114px;
+        height: 95px;
         position: absolute;
-        bottom: -565px;
+        bottom: -575px;
         right: 717px; }
       html #career .cb-info-container .info-card h1, body #career .cb-info-container .info-card h1 {
         margin-bottom: 7px;
@@ -203,6 +203,60 @@ html, body {
       html #employees .employee-container .employee-card-center .position, body #employees .employee-container .employee-card-center .position {
         width: 200px;
         color: #00945f; }
+  html .footer-line, body .footer-line {
+    margin: 100px 0 40px 0;
+    height: 2px;
+    border: none;
+    background-color: #00945f; }
+  html .social-media, body .social-media {
+    margin-bottom: 25px;
+    display: grid;
+    grid-template-columns: 30px 30px 30px 30px;
+    padding-left: 30px;
+    /* Set a specific color for each brand */
+    /* Facebook */
+    /* Twitter */ }
+    html .social-media .fa, body .social-media .fa {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      font-size: 30px;
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      text-decoration: none; }
+      html .social-media .fa:hover, body .social-media .fa:hover {
+        opacity: 0.7; }
+    html .social-media .fa-facebook, body .social-media .fa-facebook {
+      background: #3B5998;
+      color: #fff; }
+    html .social-media .fa-twitter, body .social-media .fa-twitter {
+      margin-left: 20px;
+      background: #55ACEE;
+      color: #fff; }
+    html .social-media .fa-linkedin, body .social-media .fa-linkedin {
+      margin-left: 40px;
+      background: #007bb5;
+      color: white; }
+    html .social-media .fa-youtube, body .social-media .fa-youtube {
+      margin-left: 60px;
+      background: #bb0000;
+      color: white; }
+  html .footer-container, body .footer-container {
+    padding: 50px 30px;
+    font-size: .8rem; }
+    html .footer-container p, body .footer-container p {
+      margin-bottom: 30px; }
+    html .footer-container a, body .footer-container a {
+      color: #000; }
+    html .footer-container :nth-child(2), body .footer-container :nth-child(2) {
+      text-decoration: none; }
+    html .footer-container :nth-child(3), body .footer-container :nth-child(3) {
+      border-left: solid 1px #000;
+      margin-left: 10px;
+      text-decoration: none;
+      padding-left: 10px; }
   html .title, body .title {
     color: #00945f;
     font-size: 2rem;
