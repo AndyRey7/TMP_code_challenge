@@ -278,6 +278,9 @@ header .header-container {
     border: none;
     background-color: #00945f; }
 
+@media screen and (max-width: 1030px) {
+  #employees .employee-container {
+    grid-template-columns: 1fr 1fr; } }
 @media screen and (max-width: 700px) and (min-width: 400px) {
   header .header-container {
     max-width: 100%;
